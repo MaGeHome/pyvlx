@@ -49,32 +49,30 @@ As a maintainer of the Julius2342/pyvlx repository, you can merge pull requests 
 
 ### Option 2: Command Line Merge
 ```bash
-# Fetch the PR branch
-git fetch origin pull/539/head:pr-539
-git fetch origin pull/540/head:pr-540
+# Fetch the PR branch (replace PR_NUMBER with the actual PR number)
+git fetch origin pull/PR_NUMBER/head:pr-branch-name
 
 # Review and merge
 git checkout master
-git merge pr-539
-git merge pr-540
+git merge pr-branch-name
 git push origin master
 ```
 
-### Option 3: Merge Both PRs Together
-If the PRs are related and should be merged together:
+### Option 3: Merge Multiple Related PRs Together
+If multiple PRs are related and should be merged together:
 ```bash
 # Create a new branch
 git checkout master
-git checkout -b merge-prs-539-540
+git checkout -b merge-multiple-prs
 
-# Fetch and merge both PRs
-git fetch origin pull/539/head:pr-539
-git fetch origin pull/540/head:pr-540
-git merge pr-539
-git merge pr-540
+# Fetch and merge each PR
+git fetch origin pull/FIRST_PR_NUMBER/head:pr-first
+git fetch origin pull/SECOND_PR_NUMBER/head:pr-second
+git merge pr-first
+git merge pr-second
 
 # Push and create a new PR or merge directly
-git push origin merge-prs-539-540
+git push origin merge-multiple-prs
 ```
 
 ## Questions?
