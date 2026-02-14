@@ -84,3 +84,10 @@ if __name__ == '__main__':
     # LOOP.run_forever()
     LOOP.close()
 ```
+
+Contributing
+------------
+
+Contributions to PyVLX are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit pull requests.
+
+For the main repository (Julius2342/pyvlx), maintainers can directly merge pull requests that have "Allow edits from maintainers" enabled.
